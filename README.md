@@ -1,4 +1,5 @@
 # GLORP
+
 [![Pharo](https://img.shields.io/static/v1?style=for-the-badge&message=Pharo&color=3297d4&logo=Harbor&logoColor=FFFFFF&label=)](https://www.pharo.org) 
 [![Glorp](https://img.shields.io/static/v1?style=for-the-badge&message=Glorp&color=044a64&logo=amazondynamodb&logoColor=FFFFFF&label=)](https://glorp.org)
 
@@ -13,6 +14,7 @@
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
 [![Pharo 11](https://img.shields.io/badge/Pharo-11-informational)](https://pharo.org)
 [![Pharo 12](https://img.shields.io/badge/Pharo-12-informational)](https://pharo.org)
+[![Pharo 13](https://img.shields.io/badge/Pharo-13-informational)](https://pharo.org)
 
 ## Generic Lightweight Object Relational Persistence (for Pharo)
 
