@@ -1,18 +1,33 @@
 name: PostgreSQL Integration Tests
-
-on: [push,pull_request,workflow_dispatch]
-
+on:
+  - push
+  - pull_request
+  - workflow_dispatch
 jobs:
    build:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        smalltalk: [ Pharo64-8.0, Pharo64-9.0, Pharo64-10, Pharo64-11, Pharo64-12 ]
-        rdbms: [ PostgreSQLv10, PostgreSQLv11, PostgreSQLv12, PostgreSQLv13, PostgreSQLv14, PostgreSQLv15, PostgreSQLv16 ]
+        smalltalk:
+          - Pharo64-8.0
+          - Pharo64-9.0
+          - Pharo64-10
+          - Pharo64-11
+          - Pharo64-12
+          - Pharo64-13
+        rdbms:
+          - PostgreSQLv10
+          - PostgreSQLv11
+          - PostgreSQLv12
+          - PostgreSQLv13
+          - PostgreSQLv14
+          - PostgreSQLv15
+          - PostgreSQLv16
+          - PostgreSQLv17
     name: ${{ matrix.smalltalk }} + ${{ matrix.rdbms }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Start PostgreSQL
         run: ./scripts/setup-PostgreSQL.sh
         env:
@@ -28,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RDBMS: ${{ matrix.rdbms }}
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v1
+        uses: codecov/codecov-action@v5
         with:
-          name: ${{matrix.os}}-${{matrix.smalltalk}}
+          name: PostgreSQL-Integration-Tests-${{matrix.smalltalk}}
           token: ${{ secrets.CODECOV_TOKEN }}
