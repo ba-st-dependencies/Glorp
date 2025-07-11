@@ -1,8 +1,8 @@
 # GLORP
 
-[![Unit Tests](https://github.com/ba-st-dependencies/Glorp/workflows/Unit%20Tests/badge.svg?branch=release-candidate)](https://github.com/ba-st-dependencies/Glorp/actions?query=workflow%3AUnit%20Tests)
-[![PostgreSQL Tests](https://github.com/ba-st-dependencies/Glorp/workflows/PostgreSQL%20Integration%20Tests/badge.svg?branch=release-candidate)](https://github.com/ba-st-dependencies/Glorp/actions?query=workflow%3APostgreSQL%20Integration%20Tests)
-[![SQLite3 Tests](https://github.com/ba-st-dependencies/Glorp/workflows/SQLite3%20Integration%20Tests/badge.svg?branch=release-candidate)](https://github.com/ba-st-dependencies/Glorp/actions?query=workflow%3ASQLite3%20Integration%20Tests)
+[![Unit Tests](https://github.com/ba-st-dependencies/Glorp/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/ba-st-dependencies/Glorp/actions/workflows/unit-tests.yml)
+[![PostgreSQL Tests](https://github.com/ba-st-dependencies/Glorp/actions/workflows/postgreSQL-integration-tests.yml/badge.svg)](https://github.com/ba-st-dependencies/Glorp/actions/workflows/postgreSQL-integration-tests.yml)
+[![SQLite3 Tests](https://github.com/ba-st-dependencies/Glorp/actions/workflows/sqlite3-integration-tests.yml/badge.svg)](https://github.com/ba-st-dependencies/Glorp/actions/workflows/sqlite3-integration-tests.yml)
 [![Coverage Status](https://codecov.io/github/ba-st-dependencies/Glorp/coverage.svg?branch=release-candidate)](https://codecov.io/gh/ba-st-dependencies/Glorp/branch/release-candidate)
 
 [![Pharo 10](https://img.shields.io/badge/Pharo-10-informational)](https://pharo.org)
